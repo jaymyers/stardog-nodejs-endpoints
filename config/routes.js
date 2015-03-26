@@ -3,7 +3,7 @@ module.exports = function(app) {
 	* standard API endpoints
 	*/
 	var api = require('../app/controllers/api');
-	// list all facts
+	// list all facts, with pagination
 	app.get('/facts', api.list);
 	// get fact by id
 	app.get('/facts/:id', api.show);
