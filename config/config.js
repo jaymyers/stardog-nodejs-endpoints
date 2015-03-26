@@ -3,9 +3,17 @@ var path = require('path')
 
 module.exports = {
 	development: {
-	    db: 'mongodb://localhost/noobjs_dev',
+	    db: {
+			server:'http://localhost:5820/',
+			user: 'admin',
+			pass:'admin'
+		}
 	},
 	test: {
-	    db: 'mongodb://54.214.39.69/pliant_test'
+	    db: {
+			server:'http://localhost:5820/',
+			user: 'admin',
+			pass:'admin'
+		}
 	}
 }

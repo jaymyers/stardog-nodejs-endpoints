@@ -1,7 +1,11 @@
+Triple = require('../models/triple.js');
 
 exports.list = function(req,res){
 	
-	res.send(200,'listing hals');
+	Triple.listTriples('hals',function(err,triples){
+		res.send(200,err);
+	});
+	
 }
 
 exports.show = function(req,res){
